@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     background: rgb(211, 208, 223);
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -102,6 +102,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .login-container {
@@ -200,7 +201,7 @@ a {
 
 .overlay {
     height: 50%;
-    width: 49%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
     position: absolute;
@@ -208,3 +209,37 @@ a {
     bottom: 0;
 
 }
+@media only screen and (max-width: 600px)
+{
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .left-pane {
+        width: 100%;
+    }
+
+    .right-pane {
+        width: 100%;
+        background-color: white;
+        
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .sign-up {
+      margin-bottom: 100px;
+}
+
+    .circle {
+        width:150px;
+        height: 150px;
+    }
