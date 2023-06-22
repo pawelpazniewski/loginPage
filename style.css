@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(211, 208, 223);
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    position: relative;
+    background: white;
+    border: 2px solid rgb(211, 208, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.logo {
+    position:absolute;
+    left:0;
+    top:0;
+    padding: 15px;
+    font-weight: 600;
+    
+}
+
+.footer {
+    position:absolute;
+    left:0;
+    bottom:0; 
+    padding: 15px;
+    font-size: 0.7rem;
+    color: rgba(0,0,0, 0.4);
+}
+
+.left-pane {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.sub-heading {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(0,0,0, 0.4);
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-size: .8rem;
+   
+}
+
+.email-box,.pass-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgba(0,0,0);
+    margin-bottom: 20px;
+
+}
+.right-pane {
+    width: 50%;
+    height: 100%;
+    background: rgb(243, 245, 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 50%;
+}
+
+#email, #password {
+    border: 1px SOLID rgba(0,0,0, .2);
+    border-radius: 5px;
+    
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#email::placeholder {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(0,0,0, 0.4);
+}
+
+label {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.remember-forgot {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot .remember{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    
+}
+a.google-sign-in{
+    line-height: 2rem;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+   
+}
+
+a.google-sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px SOLID rgba(0,0,0, .2);
+    border-radius: 5px;
+    gap: 10px;
+}
+
+a.google-sign-in img {
+    width: 20px;
+}
+
+.sign-in-btn{
+    font-size: 0.8rem;
+    width: 100%;
+    border: none;
+    border-radius:5px;
+    line-height: 2rem;
+    color: white;   
+    background-color:rgb(126,86,218) ;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+p.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-weight: normal;
+    font-size: .8rem;
+    margin-top: 30px;
+}
+
+a{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color:rgb(96,61,182) ;
+    border-radius: 250px;
+}
+.overlay {
+    height: 50%;
+    width: 49%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    right:0;
+    bottom: 0;
+
+}
