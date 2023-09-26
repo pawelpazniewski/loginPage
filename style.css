@@ -52,6 +52,7 @@ body {
 }
 
 .left-pane {
+    position: relative;
     width: 50%;
     height: 100%;
     display: flex;
@@ -82,6 +83,13 @@ form {
     font-size: .8rem;
 
 }
+h4 {
+    color: red;
+    
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: none;
+}
 
 .email-box,
 .pass-box {
@@ -105,12 +113,29 @@ form {
     position: relative;
 }
 
-.login-container {
+.login-container, .register-container,.reg-success {
     width: 50%;
+    transition: 0.5s ease-in-out;
 }
 
-#email,
-#password {
+.reg-success {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+    
+    z-index: 2; /* Ustaw z-index na wyższą wartość, aby wyświetlić popup nad .register-container */
+}
+.login-container.hide {
+    display:none
+}
+.register-container.hidden {
+    transform: translateY(2000px) ;
+    display: none;
+}
+
+input {
     border: 1px SOLID rgba(0, 0, 0, .2);
     border-radius: 5px;
 
@@ -118,7 +143,7 @@ form {
     margin-top: 5px;
 }
 
-#email::placeholder, #password::placeholder {
+input::placeholder, #password::placeholder {
     font-size: 0.7rem;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.4);
@@ -173,6 +198,10 @@ a.google-sign-in img {
     margin-bottom: 10px;
     cursor: pointer;
     margin-top: 30px;
+}
+
+#logoutBtn {
+    padding:0.2rem 1rem;
 }
 
 p.sign-up {
@@ -243,3 +272,4 @@ a {
         width:150px;
         height: 150px;
     }
+}
